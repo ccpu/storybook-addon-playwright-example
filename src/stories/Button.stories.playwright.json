@@ -1,0 +1,100 @@
+{
+  "version": "3",
+  "stories": {
+    "example-button--primary": {
+      "actionSets": [
+        {
+          "actions": [
+            {
+              "name": "click",
+              "args": {
+                "selector": "html>body>#root>button"
+              }
+            }
+          ],
+          "id": "R0-T33AxNYUD",
+          "title": "click"
+        }
+      ],
+      "screenshots": [
+        {
+          "actionSets": [
+            {
+              "actions": [
+                {
+                  "name": "click",
+                  "args": {
+                    "selector": "html>body>#root>button"
+                  }
+                }
+              ],
+              "title": "click"
+            }
+          ],
+          "browserOptionsId": "xBh-_iZolEpw",
+          "browserType": "chromium",
+          "id": "ImfwMIAgT9zp",
+          "index": 0,
+          "screenshotOptionsId": "7HceJkQaz5xX",
+          "title": "should click on button"
+        },
+        {
+          "actionSets": [
+            {
+              "actions": [
+                {
+                  "name": "click",
+                  "args": {
+                    "selector": "html>body>#root>button"
+                  }
+                }
+              ],
+              "title": "click"
+            }
+          ],
+          "browserOptionsId": "xBh-_iZolEpw",
+          "browserType": "firefox",
+          "id": "RqUGFCfhRXQm",
+          "index": 1,
+          "screenshotOptionsId": "7HceJkQaz5xX",
+          "title": "should click on button"
+        },
+        {
+          "actionSets": [
+            {
+              "actions": [
+                {
+                  "name": "click",
+                  "args": {
+                    "selector": "html>body>#root>button"
+                  }
+                }
+              ],
+              "title": "click"
+            }
+          ],
+          "browserOptionsId": "xBh-_iZolEpw",
+          "browserType": "webkit",
+          "id": "H8KmXaj0Fu3P",
+          "index": 2,
+          "screenshotOptionsId": "7HceJkQaz5xX",
+          "title": "should click on button"
+        }
+      ]
+    }
+  },
+  "browserOptions": {
+    "xBh-_iZolEpw": {
+      "viewport": {
+        "width": 500,
+        "height": 500
+      },
+      "cursor": true
+    }
+  },
+  "screenshotOptions": {
+    "7HceJkQaz5xX": {
+      "fullPage": true
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-playwright-example",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -8,7 +8,8 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "storybook-addon-playwright": "^3.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -43,7 +44,6 @@
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^6.0.22",
     "babel-loader": "^8.1.0",
-    "react-is": "^16.13.1",
-    "storybook-addon-playwright": "^3.3.2"
+    "react-is": "^16.13.1"
   }
 }
