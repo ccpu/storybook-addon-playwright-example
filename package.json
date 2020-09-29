@@ -44,6 +44,6 @@
     "@storybook/react": "^6.0.22",
     "babel-loader": "^8.1.0",
     "react-is": "^16.13.1",
-    "storybook-addon-playwright": "^3.3.0"
+    "storybook-addon-playwright": "^3.3.2"
   }
 }

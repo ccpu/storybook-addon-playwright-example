@@ -14743,10 +14743,10 @@ store2@^2.7.1:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.12.0.tgz#e1f1b7e1a59b6083b2596a8d067f6ee88fd4d3cf"
   integrity sha512-7t+/wpKLanLzSnQPX8WAcuLCCeuSHoWdQuh9SB3xD0kNOM38DNf+0Oa+wmvxmYueRzkmh6IcdKFtvTa+ecgPDw==
 
-storybook-addon-playwright@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/storybook-addon-playwright/-/storybook-addon-playwright-3.3.0.tgz#faa2ed55d9af978f659065019ff67527ce32c1a7"
-  integrity sha512-IF2KhcAS2uHRSjXDA6JBRlcc065lKxbtCYNVdhZt1GYmC+Frk1IUyNwjPW0tKWVWPUejNiwC2DKGiuAw2IHp1g==
+storybook-addon-playwright@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/storybook-addon-playwright/-/storybook-addon-playwright-3.3.2.tgz#bde19d3e880564dd1bd37693b39438f496c9ccb2"
+  integrity sha512-V8ODGhybdb0xFjcqIjid+yYMWag0ARZ7OdWE0bjaTUwBS5wKGACWyvuG36T6wDDsly66L37TqVlIH1vONG7Afg==
   dependencies:
     "@dom-utils/selector-path" "^1.0.3"
     "@material-ui/core" "^4.11.0"
@@ -14785,8 +14785,7 @@ storybook-addon-playwright@^3.3.0:
     reinspect "^1.1.0"
     sharp "^0.26.1"
     tinycolor2 "^1.4.2"
-    ts-to-json "^0.66.1"
-    typescript "^4.0.3"
+    ts-to-json "^1.0.0"
     webpack-virtual-modules "^0.3.1"
 
 stream-browserify@^2.0.1:
@@ -15451,10 +15450,10 @@ ts-pnp@1.1.6, ts-pnp@^1.1.6:
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.1.6.tgz#389a24396d425a0d3162e96d2b4638900fdc289a"
   integrity sha512-CrG5GqAAzMT7144Cl+UIFP7mz/iIhiy+xQ6GGcnjTezhALT02uPMRw7tgDSESgB5MsfKt55+GPWw4ir1kVtMIQ==
 
-ts-to-json@^0.66.1:
-  version "0.66.1"
-  resolved "https://registry.yarnpkg.com/ts-to-json/-/ts-to-json-0.66.1.tgz#d4203d71aa74fa44bc94083da9c99e52e14468ef"
-  integrity sha512-OWm75P+7qehR7BuAfE5drpEUrkId3HjTjwnv7zUS9TsLREHzPE9GXD2nWoOJqdE1yvpkCRZTm1tloZV3lofSbQ==
+ts-to-json@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ts-to-json/-/ts-to-json-1.0.0.tgz#8d555fdb6e8db66956e2814dd62ef07c5a27e61e"
+  integrity sha512-3ov4fCnN9FelTkTujQTyR9fN8vCD7rxTPGlPULd9WqJnvpMFhCRH+iKzGcxk5i5cFgAPhZacIsTAiX0K+nSgOQ==
   dependencies:
     "@types/json-schema" "^7.0.4"
     commander "~5.1.0"
@@ -15548,11 +15547,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-
-typescript@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.3.tgz#153bbd468ef07725c1df9c77e8b453f8d36abba5"
-  integrity sha512-tEu6DGxGgRJPb/mVPIZ48e69xCn2yRmCgYmDugAVwmJ6o+0u1RI18eO7E7WBTLYLaEVVOhwQmcdhQHweux/WPg==
 
 typescript@~3.8.3:
   version "3.8.3"
