@@ -9,7 +9,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
-    "storybook-addon-playwright": "^3.3.2"
+    "storybook-addon-playwright": "^3.3.3"
   },
   "scripts": {
     "start": "react-scripts start",
