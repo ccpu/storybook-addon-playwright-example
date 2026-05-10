@@ -1,29 +1,27 @@
-const { setConfig } = require("storybook-addon-playwright/configs");
-const playwright = require("playwright");
+const path = require("path");
 
 module.exports = {
   stories: ["../src/**/*.stories.@(js|jsx|ts|tsx)"],
-  addons: [
-    "@storybook/addon-knobs/register",
-    "storybook-addon-playwright/preset",
-    "storybook-addon-playwright/register",
-  ],
-};
+  framework: {
+    name: "@storybook/react-webpack5",
+    options: {},
+  },
+  addons: ["storybook-addon-playwright/register"],
+  webpackFinal: async (config) => {
+    config.module.rules.push({
+      test: /\.[jt]sx?$/,
+      include: path.resolve(__dirname, "../src"),
+      use: {
+        loader: require.resolve("babel-loader"),
+        options: {
+          presets: [
+            require.resolve("@babel/preset-env"),
+            require.resolve("@babel/preset-react"),
+          ],
+        },
+      },
+    });
 
-(async () => {
-  let browser = {
-    chromium: await playwright["chromium"].launch(),
-    firefox: await playwright["firefox"].launch(),
-    webkit: await playwright["webkit"].launch(),
-  };
-  setConfig({
-    storybookEndpoint: `http://localhost:6006/`,
-    getPage: async (browserType, options) => {
-      const page = await browser[browserType].newPage(options);
-      return page;
-    },
-    afterScreenshot: async (page) => {
-      await page.close();
-    },
-  });
-})();
+    return config;
+  },
+};

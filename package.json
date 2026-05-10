@@ -2,6 +2,7 @@
   "name": "storybook-addon-playwright-example",
   "version": "0.1.1",
   "private": true,
+  "packageManager": "pnpm@10.25.0",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -9,15 +10,15 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
-    "storybook-addon-playwright": "^3.4.1"
+    "storybook-addon-playwright": "5.0.0-rc.32"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,15 +36,18 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "@storybook/addon-actions": "^6.0.22",
-    "@storybook/addon-essentials": "^6.0.22",
-    "@storybook/addon-knobs": "^6.0.22",
-    "@storybook/addon-links": "^6.0.22",
-    "@storybook/node-logger": "^6.0.22",
-    "@storybook/preset-create-react-app": "^3.1.4",
-    "@storybook/react": "^6.0.22",
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.5",
+    "@babel/preset-react": "^7.28.5",
+    "@storybook/addon-actions": "8.6.18",
+    "@storybook/addon-essentials": "^8.6.18",
+    "@storybook/addon-links": "8.6.18",
+    "@storybook/node-logger": "^8.6.18",
+    "@storybook/react": "8.6.18",
+    "@storybook/react-webpack5": "^8.6.18",
+    "@storybook/test": "8.6.18",
     "babel-loader": "^8.1.0",
+    "playwright": "^1.59.1",
     "react-is": "^16.13.1"
   }
 }

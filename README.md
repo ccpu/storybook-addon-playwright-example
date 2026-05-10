@@ -1,7 +1,7 @@
 ```
-yarn
+pnpm install
 ```
 
 ```
-yarn storybook
+pnpm storybook
 ```
