@@ -10,10 +10,17 @@ const middleware = require("storybook-addon-playwright/middleware");
   };
 
   setConfig({
+    // When running Playwright in a separate container or remote environment,
+    // set `storybookEndpoint` to a host/IP that is reachable from the browser runtime.
+    // `localhost` only works when Storybook and Playwright run on the same machine/network namespace.
     storybookEndpoint: `http://localhost:6006/`,
     getPage: async (browserType, options) => {
       const page = await browser[browserType].newPage(options);
       return page;
+    },
+    beforeScreenshot: async (page) => {
+      // firefox and safari need some time to load the content before taking the screenshot
+      await new Promise((resolve) => setTimeout(() => resolve(), 200));
     },
     afterScreenshot: async (page) => {
       await page.close();
