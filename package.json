@@ -7,10 +7,9 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3",
-    "storybook-addon-playwright": "5.0.0-rc.32"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,6 +35,7 @@
     ]
   },
   "devDependencies": {
+    "storybook-addon-playwright": "~5.1.2",
     "@babel/core": "^7.29.0",
     "@babel/preset-env": "^7.29.5",
     "@babel/preset-react": "^7.28.5",

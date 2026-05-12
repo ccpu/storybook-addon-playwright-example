@@ -6,10 +6,10 @@
         {
           "actions": [
             {
-              "name": "click",
               "args": {
-                "selector": "html>body>#root>button"
-              }
+                "selector": "html>body>#storybook-root>button"
+              },
+              "name": "click"
             }
           ],
           "id": "R0-T33AxNYUD",
@@ -22,61 +22,21 @@
             {
               "actions": [
                 {
-                  "name": "click",
                   "args": {
-                    "selector": "html>body>#root>button"
-                  }
+                    "selector": "html>body>#storybook-root>button"
+                  },
+                  "id": "2T-_6ns8Hac5",
+                  "name": "click"
                 }
               ],
+              "id": "7kdAWNc8Zh14",
               "title": "click"
             }
           ],
           "browserOptionsId": "xBh-_iZolEpw",
           "browserType": "chromium",
-          "id": "ImfwMIAgT9zp",
+          "id": "-4NTAjIY-YCM",
           "index": 0,
-          "screenshotOptionsId": "7HceJkQaz5xX",
-          "title": "should click on button"
-        },
-        {
-          "actionSets": [
-            {
-              "actions": [
-                {
-                  "name": "click",
-                  "args": {
-                    "selector": "html>body>#root>button"
-                  }
-                }
-              ],
-              "title": "click"
-            }
-          ],
-          "browserOptionsId": "xBh-_iZolEpw",
-          "browserType": "firefox",
-          "id": "RqUGFCfhRXQm",
-          "index": 1,
-          "screenshotOptionsId": "7HceJkQaz5xX",
-          "title": "should click on button"
-        },
-        {
-          "actionSets": [
-            {
-              "actions": [
-                {
-                  "name": "click",
-                  "args": {
-                    "selector": "html>body>#root>button"
-                  }
-                }
-              ],
-              "title": "click"
-            }
-          ],
-          "browserOptionsId": "xBh-_iZolEpw",
-          "browserType": "webkit",
-          "id": "H8KmXaj0Fu3P",
-          "index": 2,
           "screenshotOptionsId": "7HceJkQaz5xX",
           "title": "should click on button"
         }
