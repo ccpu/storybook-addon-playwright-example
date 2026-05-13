@@ -1,0 +1,77 @@
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.story-theme-light,
+.story-theme-dark {
+  display: block;
+  min-height: 100vh;
+  padding: 32px;
+  box-sizing: border-box;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+.story-theme-light {
+  color: #0f172a;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(30, 167, 253, 0.16),
+      transparent 34%
+    ),
+    linear-gradient(180deg, #f8fbff 0%, #edf4ff 100%);
+  --story-surface: rgba(255, 255, 255, 0.86);
+  --story-surface-strong: #ffffff;
+  --story-text: #0f172a;
+  --story-muted: #475569;
+  --story-border: rgba(15, 23, 42, 0.12);
+  --story-accent: #0f8fe5;
+  --story-button-primary-bg: linear-gradient(135deg, #1ea7fd 0%, #0f8fe5 100%);
+  --story-button-primary-fg: #ffffff;
+  --story-button-secondary-bg: rgba(15, 23, 42, 0.04);
+  --story-button-secondary-fg: #0f172a;
+  --story-button-secondary-border: rgba(15, 23, 42, 0.15);
+  --story-tip-bg: #e7fdd8;
+  --story-tip-fg: #2f7a1f;
+  --story-logo-outer: #ffffff;
+  --story-logo-mid: #555ab9;
+  --story-logo-inner: #91baf8;
+}
+
+.story-theme-dark {
+  color: #e2e8f0;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(56, 189, 248, 0.18),
+      transparent 36%
+    ),
+    linear-gradient(180deg, #0f172a 0%, #111827 100%);
+  --story-surface: rgba(15, 23, 42, 0.82);
+  --story-surface-strong: #0f172a;
+  --story-text: #e2e8f0;
+  --story-muted: #94a3b8;
+  --story-border: rgba(148, 163, 184, 0.18);
+  --story-accent: #7dd3fc;
+  --story-button-primary-bg: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
+  --story-button-primary-fg: #03111f;
+  --story-button-secondary-bg: rgba(148, 163, 184, 0.14);
+  --story-button-secondary-fg: #e2e8f0;
+  --story-button-secondary-border: rgba(148, 163, 184, 0.24);
+  --story-tip-bg: rgba(52, 211, 153, 0.16);
+  --story-tip-fg: #86efac;
+  --story-logo-outer: #ffffff;
+  --story-logo-mid: #8b5cf6;
+  --story-logo-inner: #38bdf8;
+}

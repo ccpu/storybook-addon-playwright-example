@@ -6,7 +6,7 @@ module.exports = {
     name: "@storybook/react-webpack5",
     options: {},
   },
-  addons: ["storybook-addon-playwright/register"],
+  addons: ["storybook-addon-playwright/register", "@storybook/addon-themes"],
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.[jt]sx?$/,
