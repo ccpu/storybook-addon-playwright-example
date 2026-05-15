@@ -18,10 +18,6 @@ const middleware = require("storybook-addon-playwright/middleware");
       const page = await browser[browserType].newPage(options);
       return page;
     },
-    beforeScreenshot: async (page) => {
-      // firefox and webkit need some time to load the content before taking the screenshot
-      await new Promise((resolve) => setTimeout(() => resolve(), 200));
-    },
     afterScreenshot: async (page) => {
       await page.close();
     },
