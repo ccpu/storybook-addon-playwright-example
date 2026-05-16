@@ -2,7 +2,6 @@
   "name": "storybook-addon-playwright-example",
   "version": "0.1.1",
   "private": true,
-  "packageManager": "pnpm@10.25.0",
   "dependencies": {
     "@storybook/addon-themes": "^8.6.18",
     "@testing-library/jest-dom": "^4.2.4",
@@ -17,6 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "postinstall": "playwright install chromium firefox webkit",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -s public"
   },
@@ -36,19 +36,16 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.29.0",
-    "@babel/preset-env": "^7.29.5",
-    "@babel/preset-react": "^7.28.5",
     "@storybook/addon-actions": "8.6.18",
     "@storybook/addon-essentials": "^8.6.18",
     "@storybook/addon-links": "8.6.18",
     "@storybook/node-logger": "^8.6.18",
-    "@storybook/react": "8.6.18",
-    "@storybook/react-webpack5": "^8.6.18",
+    "@storybook/react-vite": "^8.6.18",
     "@storybook/test": "8.6.18",
-    "babel-loader": "^8.1.0",
+    "@vitejs/plugin-react": "^5.0.0",
     "playwright": "^1.59.1",
     "react-is": "^16.13.1",
-    "storybook-addon-playwright": "~5.8.0"
+    "storybook-addon-playwright": "file:../storybook-addon-playwright",
+    "vite": "^6.3.0"
   }
 }

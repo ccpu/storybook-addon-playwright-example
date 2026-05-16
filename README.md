@@ -1,7 +1,7 @@
 ```
-pnpm install
+npm install
 ```
 
 ```
-pnpm storybook
+npm run storybook
 ```

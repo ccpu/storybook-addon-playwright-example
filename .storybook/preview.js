@@ -1,5 +1,6 @@
-require("./preview.css");
-const { withThemeByClassName } = require("@storybook/addon-themes");
+import "./preview.css";
+import { withThemeByClassName } from "@storybook/addon-themes";
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
 };
