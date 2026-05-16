@@ -45,7 +45,7 @@
     "@vitejs/plugin-react": "^5.0.0",
     "playwright": "^1.59.1",
     "react-is": "^16.13.1",
-    "storybook-addon-playwright": "file:../storybook-addon-playwright",
+    "storybook-addon-playwright": "^5.9.0",
     "vite": "^6.3.0"
   }
 }
